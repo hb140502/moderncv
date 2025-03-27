@@ -11,6 +11,8 @@
 *.toc
 *.bcf
 *.run.xml
+cv.bbl-SAVE-ERROR
+cv.bcf-SAVE-ERROR
 
 # template.tex output
 # move to *.pdf once manual is done
