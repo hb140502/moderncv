@@ -12,7 +12,11 @@
 
 # template.tex output
 # move to *.pdf once manual is done
-template.pdf
+*.pdf
 
 # release tarballs
 moderncv-*.tar.gz
+
+# personal data
+cv.tex
+data
