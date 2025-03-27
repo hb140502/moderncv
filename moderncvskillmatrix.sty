@@ -264,7 +264,7 @@
         \my@repeat@count=\z@
         \@whilenum\my@repeat@count<#1\do{\cvSkill@Shape{skillmatrixfullcolor}\advance%
         \my@repeat@count\@ne\,}%
-        \my@repeat@count=\numexpr5-\z@\relax
+        \my@repeat@count=\numexpr4-\z@\relax
         \@whilenum\my@repeat@count>#1\do{\cvSkill@Shape{skillmatrixemptycolor}\advance%
         \my@repeat@count\m@ne\,}%
     \endgroup
@@ -315,7 +315,7 @@
     \RenewDocumentCommand{\recompute@cvskillmatrix@lengths}{}{%
         \setlength{\skillmatrix@padding}{1ex}%
         \setlength{\skillmatrix@hintscolumnwidth}{\hintscolumnwidth}%
-        \setlength{\cvskill@width}{\widthof{\cvskill{5}}}%
+        \setlength{\cvskill@width}{\widthof{\cvskill{4}}}%
         \setlength{\cvskill@experiencewidth}{\widthof{``Year''}}%
         \setlength{\skillmatrix@bodylength}{\maincolumnwidth}%
         \setlength{\skillmatrix@columnwidth}{0.45\skillmatrix@bodylength}%
@@ -600,7 +600,7 @@
 \NewDocumentCommand\skillLegend@defaultLevelOne{}{basic knowledge}
 \NewDocumentCommand\skillLegend@defaultLevelTwo{}{intermediate knowledge with some project experience}
 \NewDocumentCommand\skillLegend@defaultLevelThree{}{extensive project experience}
-\NewDocumentCommand\skillLegend@defaultLevelFour{}{deepened expert knowledge}
+\NewDocumentCommand\skillLegend@defaultLevelFour{}{!!!test!!!}
 \NewDocumentCommand\skillLegend@defaultLevelFive{}{expert\,/\,specialist}
 % Redefinition of \cvskilllegend valid for moderncvbodyi, moderncvbodyii, moderncvbodyiii
 \RenewDocumentCommand\cvskilllegend{s +O{.25em} +O{\skillLegend@defaultLevelOne} +O{\skillLegend@defaultLevelTwo} +O{\skillLegend@defaultLevelThree} +O{\skillLegend@defaultLevelFour} +O{\skillLegend@defaultLevelFive} +m}{%
@@ -619,9 +619,7 @@
                             p{\cvskilllegend@rightdescriptorwidth}@{}}%
                 \raggedleft\hintstyle{#8}  & \cvskill{1}& & {\skillLegend@FontSize #3} & \cvskill{3}& &{\skillLegend@FontSize #5 } \\%
                             %
-                        & \cvskill{2} & & \multirow{2}{\cvskilllegend@leftdescriptorwidth}{{\skillLegend@FontSize #4}} & \cvskill{4}& & {\skillLegend@FontSize #6 } \\%
-                    %
-                        &  & &  & \cvskill{5}& & {\skillLegend@FontSize #7 }%
+                        & \cvskill{2} & & {\skillLegend@FontSize #4} & \cvskill{4}& & {\skillLegend@FontSize #6 } \\%
             \end{tabular}%
         \endgroup
         \par\addvspace{#2}}{%
