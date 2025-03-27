@@ -20,5 +20,6 @@
 moderncv-*.tar.gz
 
 # personal data
+cover_letter.tex
 data
 research_publications.bib
