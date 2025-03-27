@@ -9,6 +9,8 @@
 *.synctex.gz
 *.xdv
 *.toc
+*.bcf
+*.run.xml
 
 # template.tex output
 # move to *.pdf once manual is done
@@ -19,3 +21,4 @@ moderncv-*.tar.gz
 
 # personal data
 data
+research_publications.bib
