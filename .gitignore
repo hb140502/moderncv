@@ -22,6 +22,6 @@ cv.bcf-SAVE-ERROR
 moderncv-*.tar.gz
 
 # personal data
-cover_letter.tex
 data
 research_publications.bib
+*.jpg
